@@ -44,6 +44,7 @@ public class InputMovement : MonoBehaviour
 		_rigid.AddForce ( Vector2.up * f );
 	}
 
+	// reset jump parameters when hitting the ground
 	public void OnCollisionEnter2D ( Collision2D collision )
 	{
 		if ( collision.transform.tag == "Ground" )
