@@ -63,6 +63,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Logic\AttackBehavior.cs" />
+    <Compile Include="Assets\Scripts\Logic\AttackController.cs" />
+    <Compile Include="Assets\Scripts\Logic\AttackParticles.cs" />
     <Compile Include="Assets\Scripts\Logic\InputMovement.cs" />
     <Compile Include="Assets\Scripts\Logic\Jump.cs" />
     <Compile Include="Assets\Scripts\Logic\Move.cs" />

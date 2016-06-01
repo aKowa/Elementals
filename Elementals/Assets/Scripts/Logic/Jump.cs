@@ -5,23 +5,23 @@ using System;
 [System.Serializable]
 public struct Jump
 {
-	public float _Force;
-	public int _MaxAmount;
-	private int _amount;
+	public float force;
+	public int MaxAmount;
+	private int amount;
 
 	public void ResetAmount()
 	{
-		_amount = 0;
+		amount = 0;
 	}
 
 	public float Force
 	{
 		get
 		{
-			if ( _amount < _MaxAmount )
+			if ( amount < MaxAmount )
 			{
 				IncreaseAmount();
-				return _Force;
+				return force;
 			}
 			else
 			{
@@ -29,11 +29,11 @@ public struct Jump
 			}
 		}
 
-		set { _Force = value; }
+		set { force = value; }
 	}
 
 	private void IncreaseAmount()
 	{
-		_amount++;
+		amount++;
 	}
 }
